@@ -1,49 +1,58 @@
 // JavaScript for the Subscription Page
-// Function to handle subscription form submission
-$(document).ready(function () {
-    $("#subscriptionForm").submit(function (event) {
-        event.preventDefault();
-        // Get the email input value
-        var email = $("#email").val();
-        // Validate the email (add your own validation logic)
-        if (validateEmail(email)) {
-            // Check if the email is already subscribed
-            if (isSubscribed(email)) {
-                // If already subscribed, directly grant access to the main content page
-                window.location.replace("index.html");
-            } else {
-                // If not subscribed, store the subscription data in localStorage
-                storeSubscription(email);
-                // Display a success message
-                alert("Subscription Successful!\nEmail: " + email);
-                // Redirect to the main content page
-                window.location.replace("website.html");
-            }
-        } else {
-            alert("Please provide a valid email address.");
-        }
-    });
-});
 
-// Function to validate email format
-function validateEmail(email) {
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-// Function to check if the email is already subscribed
+// Function to check if the user is subscribed
 function isSubscribed(email) {
-    // Retrieve existing subscriptions from localStorage (if any)
-    var existingSubscriptions = JSON.parse(localStorage.getItem("subscriptions")) || [];
-    // Check if the email is in the array
-    return existingSubscriptions.includes(email);
+    // Retrieve subscription data from local storage
+    var subscriptions = JSON.parse(localStorage.getItem('subscriptions')) || [];
+
+    // Check if the email is in the subscriptions list
+    return subscriptions.some(function (subscription) {
+        return subscription.email === email;
+    });
 }
 
-function storeSubscription(email) {
-    // Retrieve existing subscriptions from localStorage (if any)
-    var existingSubscriptions = JSON.parse(localStorage.getItem("subscriptions")) || [];
-    // Add the new subscription to the array
-    existingSubscriptions.push(email);
-    // Save the updated array back to localStorage
-    localStorage.setItem("subscriptions", JSON.stringify(existingSubscriptions));
+// Function to handle form submission
+function submitSubscription(event) {
+    event.preventDefault();
+
+    // Get form elements
+    var emailInput = document.getElementById('email');
+
+    // Validate form inputs
+    if (!emailInput.value) {
+        alert('Please enter your email address.');
+        return;
+    }
+
+    // Check if the user is subscribed
+    if (isSubscribed(emailInput.value)) {
+        // Allow access or redirect to the main page
+        window.location.href = 'website.html';
+    } else {
+        // Display a message for new subscriptions
+        alert('Thank you for subscribing! You now have access to the website.');
+
+        // Add the new subscription to local storage
+        addSubscription(emailInput.value);
+
+        // Redirect to the main page
+        window.location.href = 'website.html';
+    }
 }
+
+// Function to add a new subscription to local storage
+function addSubscription(email) {
+    // Retrieve existing subscriptions from local storage
+    var subscriptions = JSON.parse(localStorage.getItem('subscriptions')) || [];
+
+    // Add the new subscription to the list
+    subscriptions.push({
+        email: email
+    });
+
+    // Save the updated subscriptions list to local storage
+    localStorage.setItem('subscriptions', JSON.stringify(subscriptions));
+}
+
+// Event listener for form submission
+document.getElementById('subscriptionForm').addEventListener('submit', submitSubscription);
