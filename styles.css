@@ -56,7 +56,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
-  background-image: url('C:/Users/Vozon Comsof Pvt Ltd/Desktop/Trail 2/background.jpg'); /* Replace with the correct absolute path */
+  background-image: url('https://github.com/Payod31/Info-Hub/blob/main/background.jpg'); /* Replace with the correct absolute path */
   background-size: cover;
   background-repeat: no-repeat;
 }
