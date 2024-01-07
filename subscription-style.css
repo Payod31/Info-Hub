@@ -1,0 +1,51 @@
+/* Add this CSS code to your subscription-style.css file */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#subscriptionPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+}
+
+#subscriptionPage h2 {
+    margin: 0;
+}
+
+#subscriptionPage p {
+    margin: 10px 0;
+}
+
+#subscriptionForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subscriptionForm label {
+    margin-bottom: 5px;
+}
+
+#subscriptionForm input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#subscriptionForm button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2ecc71;
+    color: #fff;
+    cursor: pointer;
+}
