@@ -15,33 +15,13 @@ function submitReview(event) {
         return;
     }
 
-    // Create a new review object
-    var review = {
-        name: nameInput.value,
-        rating: ratingSelect.value,
-        comment: commentTextarea.value
-    };
+    // Display a thank you message
+    alert('Thank you for your review!');
 
-    // Add the review to the list
-    addReviewToList(review);
-
-    // Clear the form inputs
-    nameInput.value = '';
-    ratingSelect.value = '';
-    commentTextarea.value = '';
-}
-
-// Function to add a review to the reviews list
-function addReviewToList(review) {
-    // Get the reviews list container
-    var reviewsList = document.getElementById('reviewsList');
-
-    // Create a new list item for the review
-    var reviewItem = document.createElement('li');
-    reviewItem.innerHTML = `<strong>${review.name}</strong> - ${review.rating} stars<br>${review.comment}`;
-
-    // Add the review to the list
-    reviewsList.appendChild(reviewItem);
+    // Redirect to subscription.html after 2 seconds
+    setTimeout(function () {
+        window.location.href = 'subscription.html';
+    }, 2000);
 }
 
 // Event listener for form submission
