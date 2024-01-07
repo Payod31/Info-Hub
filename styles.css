@@ -57,7 +57,7 @@ main {
   justify-content: space-around;
   padding: 20px;
 
-  background-image: url('https://github.com/Payod31/Info-Hub/blob/main/background.jpg'); /* Replace with the correct absolute path */
+  background-image: url('Images/background.jpg'); /* Replace with the correct absolute path */
 
   background-size: cover;
   background-repeat: no-repeat;
