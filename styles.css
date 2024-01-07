@@ -56,7 +56,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
-  background-image: url('C:/Users/Vozon Comsof Pvt Ltd/Desktop/Trail 2/background.jpg'); /* Replace with the correct absolute path */
+  background-image: url('Images/background.jpg'); /* Replace with the correct absolute path */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -95,3 +95,4 @@ h2 {
 .results a:hover {
   color: #2ecc71;
 }
+
