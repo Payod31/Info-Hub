@@ -30,7 +30,7 @@ function submitReview(event) {
 
     // Redirect to subscription.html after 2 seconds
     setTimeout(function () {
-        window.location.href = 'subscription.html';
+        window.location.href = 'website.html';
     }, 2000);
 }
 
