@@ -98,26 +98,20 @@ h2 {
   color: #2ecc71;
 }
 
-.results li {
-  font-size: 18px;
-  margin-bottom: 15px;
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0a0a0a;
   padding: 10px;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  margin-right: 20px;
+  font-weight: bold;
 }
 
-.results li:hover {
-  transform: translateY(-5px);
-}
-
-.results strong {
-  color: #e74c3c;
-  font-size: 20px;
-}
-
-.results span {
-  color: #7f8c8d;
+/* Position the review link to the left corner */
+.nav-links {
+  margin-left: auto;
 }
