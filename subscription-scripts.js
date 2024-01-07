@@ -17,7 +17,7 @@ $(document).ready(function () {
                 // Display a success message
                 alert("Subscription Successful!\nEmail: " + email);
                 // Redirect to the main content page
-                window.location.replace("index.html");
+                window.location.replace("website.html");
             }
         } else {
             alert("Please provide a valid email address.");
