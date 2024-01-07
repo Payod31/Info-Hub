@@ -1,30 +1,48 @@
 // JavaScript for the Review Page
 
-// Function to handle review form submission
-document.addEventListener("DOMContentLoaded", function () {
-    var reviewForm = document.getElementById("reviewForm");
+// Function to handle form submission
+function submitReview(event) {
+    event.preventDefault();
 
-    reviewForm.addEventListener("submit", function (event) {
-        event.preventDefault();
+    // Get form elements
+    var nameInput = document.getElementById('name');
+    var ratingSelect = document.getElementById('rating');
+    var commentTextarea = document.getElementById('comment');
 
-        var name = document.getElementById("name").value;
-        var rating = document.getElementById("rating").value;
-        var comment = document.getElementById("comment").value;
+    // Validate form inputs
+    if (!nameInput.value || !ratingSelect.value || !commentTextarea.value) {
+        alert('Please fill in all fields.');
+        return;
+    }
 
-        // Perform validation if needed
+    // Create a new review object
+    var review = {
+        name: nameInput.value,
+        rating: ratingSelect.value,
+        comment: commentTextarea.value
+    };
 
-        // Example: Log review details to the console
-        console.log("Review Submitted:");
-        console.log("Name: " + name);
-        console.log("Rating: " + rating);
-        console.log("Comment: " + comment);
+    // Add the review to the list
+    addReviewToList(review);
 
-        // You can add further logic here, such as sending the review to a server, etc.
+    // Clear the form inputs
+    nameInput.value = '';
+    ratingSelect.value = '';
+    commentTextarea.value = '';
+}
 
-        // Optional: Display a thank you message or redirect to another page
-        alert("Thank you for your review!");
+// Function to add a review to the reviews list
+function addReviewToList(review) {
+    // Get the reviews list container
+    var reviewsList = document.getElementById('reviewsList');
 
-        // Redirect to the subscription page
-        window.location.href = "subscription.html";
-    });
-});
+    // Create a new list item for the review
+    var reviewItem = document.createElement('li');
+    reviewItem.innerHTML = `<strong>${review.name}</strong> - ${review.rating} stars<br>${review.comment}`;
+
+    // Add the review to the list
+    reviewsList.appendChild(reviewItem);
+}
+
+// Event listener for form submission
+document.getElementById('reviewForm').addEventListener('submit', submitReview);
