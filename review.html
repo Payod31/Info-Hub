@@ -4,44 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Page</title>
+    <title>Search Portal</title>
     <link rel="stylesheet" href="review.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Review Page</h1>
+        <img src="path/to/your/logo.png" alt="Logo" id="logo">
+        <div class="header-content">
+            <h1>Search Portal</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Enter your query...">
+                <button onclick="showMockResults()">Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="review.html">Reviews</a>
+            </div>
+        </div>
     </header>
-g
+
     <main>
-        <form id="reviewForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="rating">Rating:</label>
-            <select id="rating" name="rating" required>
-                <option value="5">5 stars</option>
-                <option value="4">4 stars</option>
-                <option value="3">3 stars</option>
-                <option value="2">2 stars</option>
-                <option value="1">1 star</option>
-            </select>
-
-            <label for="comment">Comment:</label>
-            <textarea id="comment" name="comment" rows="4" required></textarea>
-
-            <button type="submit">Submit Review</button>
-        </form>
-
-        <!-- Display reviews section -->
-        <section id="reviewsSection">
-            <h2>Reviews</h2>
-            <ul id="reviewsList"></ul>
-        </section>
+        <!-- Rest of your content -->
     </main>
 
-    <script src="review-scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
+git 
