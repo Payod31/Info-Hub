@@ -2,45 +2,53 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f8f8f8;
 }
 
 .container {
     max-width: 600px;
     margin: 50px auto;
     background-color: #fff;
-    padding: 30px;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
+    color: #3498db;
     text-align: center;
-    color: #2c3e50;
+    font-size: 36px;
 }
 
 p {
     font-size: 18px;
-    line-height: 1.5;
-    color: #34495e;
-    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input {
-    width: 100%;
     padding: 15px;
-    margin-bottom: 20px;
     font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
 }
 
 button {
-    width: 100%;
-    padding: 15px;
-    background-color: #3498db;
-    color: #fff;
+    padding: 15px 30px;
     font-size: 18px;
+    color: #fff;
+    background-color: #3498db;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -51,14 +59,9 @@ button:hover {
     background-color: #2980b9;
 }
 
-/* Optional: Add styles for your background image container */
-.background-image-container {
-    background-image: url('Images/background.jpg'); /* Replace with the correct absolute path */
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 200px; /* Set the height you want for the background image container */
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 20px;
+.success-message {
+    color: #27ae60;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
 }
