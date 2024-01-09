@@ -78,6 +78,33 @@ function showResults(sectionId, results) {
   }
 }
 
+// Add this to your existing JavaScript
+function showSuggestions() {
+    const input = document.getElementById('searchInput');
+    const suggestionsContainer = document.getElementById('suggestionsContainer');
+
+    // Clear previous suggestions
+    suggestionsContainer.innerHTML = '';
+
+    // Show suggestions if the input is not empty
+    if (input.value.trim() !== '') {
+        // Replace this with your logic to fetch and display suggestions
+        const suggestions = ['Suggestion 1', 'Suggestion 2', 'Suggestion 3'];
+
+        suggestions.forEach((suggestion) => {
+            const suggestionItem = document.createElement('div');
+            suggestionItem.classList.add('suggestion-item');
+            suggestionItem.textContent = suggestion;
+            suggestionItem.addEventListener('click', () => {
+                input.value = suggestion;
+                suggestionsContainer.innerHTML = ''; // Clear suggestions after selecting one
+            });
+
+            suggestionsContainer.appendChild(suggestionItem);
+        });
+    }
+}
+
 // Mock data for search results
 var searchData = {
   dataScience: {

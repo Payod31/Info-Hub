@@ -20,8 +20,10 @@
        
         <div class="search-container">
             <form onsubmit="event.preventDefault(); showMockResults(document.getElementById('searchInput').value)">
-                <input type="text" id="searchInput" placeholder="Enter your query...">
-                <button type="submit">Search</button>
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="Enter your query..." oninput="showSuggestions()">
+                    <div id="suggestionsContainer" class="suggestions-container"></div>
+                </div>
             </form>
         </div>
         <div id="resultsContainer" class="results"></div>

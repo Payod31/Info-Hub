@@ -150,3 +150,27 @@ h2 {
 #reviewButton:hover {
   background-color: #34495e; /* Change background color on hover */
 }
+
+/* Add this to your existing CSS */
+.suggestions-container {
+  position: absolute;
+  width: 300px; /* Adjust the width according to your preference */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.suggestion-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+
+.suggestion-item:hover {
+  background-color: #ecf0f1; /* Change background color on hover */
+}
