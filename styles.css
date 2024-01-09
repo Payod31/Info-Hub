@@ -150,12 +150,15 @@ h2 {
 #reviewButton:hover {
   background-color: #34495e; /* Change background color on hover */
 }
-/* Updated subscription-style.css */
+/* Updated styles.css for index.html */
 footer {
-  background-color: #3498db;
+  background-color: #3498db; /* Match with the header color */
   color: #fff;
   text-align: center;
   padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-container {
@@ -184,3 +187,4 @@ footer {
 .footer-links a:hover {
   color: #2ecc71;
 }
+

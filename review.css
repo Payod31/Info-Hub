@@ -103,7 +103,7 @@ form button:hover {
 #reviewsList li:hover {
     transform: translateY(-5px); /* Lift the review on hover */
 }
-/* Updated review.css for review.html */
+/* Updated styles.css for index.html */
 footer {
     background-color: #3498db; /* Match with the header color */
     color: #fff;
