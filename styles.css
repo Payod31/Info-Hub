@@ -151,3 +151,24 @@ h2 {
   background-color: #34495e; /* Change background color on hover */
 }
 
+/* Add this to your existing CSS */
+#suggestionsContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Hide the suggestions initially */
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #ecf0f1;
+}
