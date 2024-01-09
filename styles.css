@@ -92,10 +92,14 @@ h2 {
   color: #3498db;
   text-decoration: none;
   transition: color 0.3s;
+  border: 1px solid #3498db; /* Add a border to distinguish links */
+  padding: 8px; /* Add padding for a better visual appearance */
+  border-radius: 5px; /* Add rounded corners for a modern look */
 }
 
 .results a:hover {
   color: #2ecc71;
+  background-color: #ecf0f1; /* Change background color on hover for better visibility */
 }
 
 .nav-links {
