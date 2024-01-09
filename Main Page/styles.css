@@ -152,15 +152,17 @@ h2 {
 }
 /* Existing styles remain unchanged */
 
+/* Existing styles remain unchanged */
+
 /* Added styles for the footer */
 footer {
   background-color: #3498db;
   color: #fff;
   text-align: center;
   padding: 15px 0;
+  width: 100%;
   position: fixed;
   bottom: 0;
-  width: 100%;
 }
 
 .footer-container {
@@ -179,9 +181,10 @@ footer {
   text-decoration: none;
 }
 
-/* Added styles for the main content */
+/* Updated styles for the main content */
 main {
-  padding-bottom: 60px; /* Adjusted padding to avoid overlapping with footer */
+  padding-bottom: 90px; /* Adjusted padding to avoid overlapping with footer */
 }
+
 
 
