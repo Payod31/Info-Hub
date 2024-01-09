@@ -17,6 +17,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    background-image: url('Images/background.jpg'); /* Replace with the correct image path */
+    background-size: cover;
+    background-position: center;
 }
 
 h2 {
