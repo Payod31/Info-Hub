@@ -2,65 +2,53 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f0f0f0;
 }
 
 header {
-  background-color: #000;
+  background-color: #3498db;
   color: #fff;
   text-align: center;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 1px;
 }
 
-.logo-container img {
-  max-width: 100%;
+/* Updated style for the image container */
+.image-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width: 446px; /* Set max-width to match the image width */
+  width: 100%; /* Set width to 100% */
+}
+
+/* Updated style for the image */
+#actualImage {
+  width: 100%;
   height: auto;
+  border-radius: 5px;
+}
+
+header h1 {
+  margin: 0;
 }
 
 .search-container {
-  flex-grow: 1;
-  margin: 0 20px;
+  margin-top: 20px;
 }
 
+/* Adjusted style for the search input */
 input {
   padding: 10px;
   font-size: 16px;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Set the desired width */
 }
 
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #d9534f;
+  background-color: #2ecc71;
   color: #fff;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-button:hover {
-  background-color: #c9302c;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #5bc0de;
-  transition: background-color 0.3s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.nav-links a:hover {
-  background-color: #46b8da;
 }
 
 main {
@@ -68,12 +56,16 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
+  background-image: url('Images/background.jpg'); /* Replace with the correct absolute path */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 section {
-  width: calc(33.33% - 20px);
+  width: 30%;
   margin: 10px;
   padding: 20px;
+  border: 1px solid #ddd;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -85,7 +77,7 @@ section:hover {
 }
 
 h2 {
-  color: #333;
+  color: #2c3e50;
 }
 
 .results {
@@ -95,16 +87,52 @@ h2 {
 .results a {
   display: block;
   margin-bottom: 5px;
-  color: #337ab7;
+  color: #3498db;
   text-decoration: none;
   transition: color 0.3s;
-  border: 1px solid #337ab7;
-  padding: 8px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #3498db; /* Add a border to distinguish links */
+  padding: 8px; /* Add padding for a better visual appearance */
+  border-radius: 5px; /* Add rounded corners for a modern look */
 }
 
 .results a:hover {
-  color: #23527c;
-  background-color: #ecf0f1;
+  color: #2ecc71;
+  background-color: #ecf0f1; /* Change background color on hover for better visibility */
+}
+
+/* Added styles for navigation links */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #5bc0de;
+  transition: background-color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px; /* Add a margin to separate it from the search bar */
+}
+
+/* Position the review link to the left corner */
+.nav-links {
+  margin-left: auto;
+}
+
+/* Added styles for the review button */
+#reviewButton {
+  background-color: #2c3e50; /* Set the initial background color */
+  color: #fff; /* Set the text color */
+  padding: 10px 20px; /* Add padding to the button */
+  border: none; /* Remove the default button border */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition for a smooth hover effect */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+#reviewButton:hover {
+  background-color: #34495e; /* Change background color on hover */
 }
