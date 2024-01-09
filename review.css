@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    background-image: url('Images/Review.jpg'); /* Replace with the correct image path */
+    background-size: cover;
+    background-position: center;
 }
 
 header {
