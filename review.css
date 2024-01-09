@@ -103,7 +103,7 @@ form button:hover {
 #reviewsList li:hover {
     transform: translateY(-5px); /* Lift the review on hover */
 }
-/* Updated styles.css for index.html */
+/* Updated review.css for review.html */
 footer {
     background-color: #3498db; /* Match with the header color */
     color: #fff;
@@ -112,13 +112,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1000; /* Ensure the footer is above other elements */
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -140,3 +141,4 @@ footer {
 .footer-links a:hover {
     color: #2ecc71;
 }
+

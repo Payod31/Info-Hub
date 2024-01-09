@@ -159,13 +159,14 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 1000; /* Ensure the footer is above other elements */
 }
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
