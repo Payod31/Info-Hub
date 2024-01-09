@@ -78,8 +78,6 @@ function showResults(sectionId, results) {
   }
 }
 
-
-
 // Mock data for search results
 var searchData = {
   dataScience: {

@@ -150,4 +150,37 @@ h2 {
 #reviewButton:hover {
   background-color: #34495e; /* Change background color on hover */
 }
+/* Updated styles.css */
+footer {
+  background-color: #2ecc71;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
 
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #3498db;
+}
