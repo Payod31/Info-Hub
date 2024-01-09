@@ -113,6 +113,7 @@ function showSuggestions() {
 
 
 
+
 // Mock data for search results
 var searchData = {
   dataScience: {

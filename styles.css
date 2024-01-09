@@ -156,7 +156,7 @@ h2 {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  width: calc(100% - 20px); /* Adjust the width to match your search input */
   z-index: 1;
   background-color: #fff;
   border: 1px solid #ddd;
