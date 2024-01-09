@@ -89,21 +89,29 @@ function showSuggestions() {
     // Show suggestions if the input is not empty
     if (input.value.trim() !== '') {
         // Replace this with your logic to fetch and display suggestions
-        const suggestions = ['Suggestion 1', 'Suggestion 2', 'Suggestion 3'];
+        const categories = ['Data Science', 'Marketing', 'Digital Marketing'];
 
-        suggestions.forEach((suggestion) => {
+        categories.forEach((category) => {
             const suggestionItem = document.createElement('div');
             suggestionItem.classList.add('suggestion-item');
-            suggestionItem.textContent = suggestion;
+            suggestionItem.textContent = category;
             suggestionItem.addEventListener('click', () => {
-                input.value = suggestion;
+                input.value = category;
                 suggestionsContainer.innerHTML = ''; // Clear suggestions after selecting one
+                // Add logic here to trigger the search or navigate to the selected category
             });
 
             suggestionsContainer.appendChild(suggestionItem);
         });
+
+        // Display the suggestions
+        suggestionsContainer.style.display = 'block';
+    } else {
+        // Hide the suggestions if the input is empty
+        suggestionsContainer.style.display = 'none';
     }
 }
+
 
 // Mock data for search results
 var searchData = {
