@@ -150,3 +150,7 @@ h2 {
 #reviewButton:hover {
   background-color: #34495e; /* Change background color on hover */
 }
+
+footer {
+  display: none;
+}
