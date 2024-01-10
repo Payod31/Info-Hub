@@ -20,7 +20,7 @@ function showMockResults(query) {
           showResults('articleResults', searchData.dataScience.articles);
           showResults('blogResults', searchData.dataScience.blogs);
           showResults('studyMaterialResults', searchData.dataScience.studyMaterial);
-          showResults('websiteResults', searchData.dataScience.Website);
+          showResults('WebsiteResults', searchData.dataScience.Website);
           showResults('courseResults', searchData.dataScience.courses);
           showResults('interviewResults', searchData.dataScience.interviewQuestions);
           showResults('qnaResults', searchData.dataScience.qna);
@@ -31,7 +31,7 @@ function showMockResults(query) {
           showResults('articleResults', searchData.marketing.articles);
           showResults('blogResults', searchData.marketing.blogs);
           showResults('studyMaterialResults', searchData.marketing.studyMaterial);
-          showResults('websiteResults', searchData.marketing.Website);
+          showResults('WebsiteResults', searchData.marketing.Website);
           showResults('courseResults', searchData.marketing.courses);
           showResults('interviewResults', searchData.marketing.interviewQuestions);
           showResults('qnaResults', searchData.marketing.qna);
@@ -42,7 +42,7 @@ function showMockResults(query) {
             showResults('articleResults', searchData.digitalMarketing.articles);
             showResults('blogResults', searchData.digitalMarketing.blogs);
             showResults('studyMaterialResults', searchData.digitalMarketing.studyMaterial);
-            showResults('websiteResults', searchData.digitalMarketing.Website);
+            showResults('WebsiteResults', searchData.digitalMarketing.Website);
             showResults('courseResults', searchData.digitalMarketing.courses);
             showResults('interviewResults', searchData.digitalMarketing.interviewQuestions);
             showResults('qnaResults', searchData.digitalMarketing.qna);
