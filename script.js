@@ -139,38 +139,38 @@ var searchData = {
           // Add more book results as needed
       ],
       articles: [
-          { title: 'Effective Marketing Techniques', url: '#' },
-          { title: 'Trends in Modern Marketing', url: '#' },
+          { title: 'Recommended Articles 1', url: 'https://hbr.org/1991/01/marketing-is-everything' },
+          { title: 'Recommended Articles 2', url: 'https://www.managementstudyguide.com/marketing-management-articles.htm' },
           // Add more article results as needed
       ],
       blogs: [
-          { title: 'Marketing Insights Blog', url: '#' },
-          { title: 'Practical Marketing Tips', url: '#' },
+          { title: 'Recommended blogs 1', url: 'https://unbounce.com/your-invitation/?gspk=Sm9uYXRoYW5EZWVzZQ==&gsxid=epiAV9vsDHeN&utm_medium=JonathanDeese&utm_source=marketers&gclid=Cj0KCQiAnfmsBhDfARIsAM7MKi3i2TimO8AfaX_GPKSpNKfGZA-U9uk2YYWENNjK_26NnuD_WzF7iZMaAmC1EALw_wcB' },
+          { title: 'Recommended blogs 2', url: 'https://www.google.com/amp/s/instapage.com/amp/marketing-blogs/' },
           // Add more blog results as needed
       ],
       studyMaterial: [
-          { title: 'Marketing Learning Path', url: '#' },
-          { title: 'Fundamentals of Marketing Analysis', url: '#' },
+          { title: 'Recommended StudyMaterials 1', url: 'https://www.studocu.com/in/document/indira-gandhi-national-open-university/ms-06-marketing-for-managers/unit-1-study-material/38458434' },
+          { title: 'Recommended StudyMaterials 2', url: 'https://www.measiim.edu.in/myweb/uploads/2022/05/PMF2K.pdf' },
           // Add more study material results as needed
       ],
       Website: [
-          { title: 'Marketing Event Photos', url: '#' },
-          { title: 'Visualizing Marketing Concepts', url: '#' },
+          { title: 'Recommended Website 1', url: 'https://ads.google.com/intl/en_in/start/overview-ha/' },
+          { title: 'Recommended Website 2', url: '#' },
           // Add more website results as needed
       ],
       courses: [
-          { title: 'Mastering Marketing', url: '#' },
-          { title: 'Marketing Certification Course', url: '#' },
+          { title: 'Recommended Courses 1', url: '#' },
+          { title: 'Recommended Courses 2', url: '#' },
           // Add more course results as needed
       ],
       interviewQuestions: [
-          { title: 'Common Marketing Interview Questions', url: '#' },
-          { title: 'Preparing for a Marketing Interview', url: '#' },
+          { title: 'Recommended InterviewQuestions 1', url: '#' },
+          { title: 'Recommended InterviewQuestions 2', url: '#' },
           // Add more interview question results as needed
       ],
       qna: [
-          { title: 'Marketing Q&A Forum', url: '#' },
-          { title: 'Ask the Experts: Marketing Edition', url: '#' },
+          { title: 'Recommended QnA 1', url: '#' },
+          { title: 'Recommended QnA 2', url: '#' },
           // Add more Q&A results as needed
       ],
   },
