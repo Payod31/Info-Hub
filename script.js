@@ -223,3 +223,9 @@ var searchData = {
 },
   // Add more topics as needed
 };
+
+try {
+    // Your existing code here
+} catch (error) {
+    console.error('Error:', error);
+}
